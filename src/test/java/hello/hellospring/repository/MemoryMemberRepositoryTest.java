@@ -16,6 +16,7 @@ class MemoryMemberRepositoryTest { // 굳이 public으로 안해도 됌.
     // Test는 서로 의존관계없이 끝나야함.
     @AfterEach //@Test하나 끝날 때마다 repository clear.(저장소 비움)
     public void afterEach() {
+
         repository.clearStore();
     }
 
